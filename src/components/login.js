@@ -3,6 +3,15 @@ import { Form, Button, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../assets/image/locoHome.png";
 export default class Login extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      hidden:true
+    }
+  }
+  toggleShow=()=> {
+    this.setState({ hidden: !this.state.hidden });
+  }
   render() {
     return (
       <div>
@@ -34,15 +43,20 @@ export default class Login extends Component {
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+          <Form.Group>
+            <Form.Label >Password</Form.Label>
+            <Form.Control  type={this.state.hidden ? "password" : "text"} placeholder="Password" />
           </Form.Group>
           <Form.Group controlId="formBasicCheckbox" inline>
-            <div inline style={{display:"flex"}}>
-              <Form.Check type="checkbox" label="Check me out" />
-              <Link style={{ position: "relative",
-    marginLeft: 80 }} to="/forgotpassword">
+          <input
+              type="checkbox"
+              style={{width:20,}}
+              onClick={this.toggleShow}
+            />
+            <label>show password</label>
+            <div inline style={{display:"inline"}}>
+              
+              <Link style={{ marginLeft:70 }} to="/forgotpassword">
                 Forgot Password
               </Link>
             </div>
