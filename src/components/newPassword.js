@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import { Form, Button, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -48,7 +49,7 @@ export default class Login extends Component {
       <div>
         <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">
-      <img
+      <image
         alt="loco home"
         src={logo}
         width="45"
@@ -66,7 +67,7 @@ export default class Login extends Component {
       <div className="container" style={{ marginTop: 100, width: 350 }}>
         <Form>
           <div style={{ textAlign: "center", marginBottom: 50 }}>
-            <img style={{ marginBottom: 25 }} src={logo} width="250" />
+            <image style={{ marginBottom: 25 }} src={logo} width="250" />
             <h3>Change New Password</h3>
           </div>
           <Form.Group controlId="formBasicPassword">

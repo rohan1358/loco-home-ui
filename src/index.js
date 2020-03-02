@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route,Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import newPassword from "./components/newPassword"
 import Login from "./components/login"
 import Home from "./components/home"
@@ -17,8 +17,8 @@ import History from './components/history';
 import Booking from './components/booking';
 import Cancel from './components/cancel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar} from 'react-bootstrap';
-import logo from './assets/image/locoHome.png'
+// import {Navbar} from 'react-bootstrap';
+// import logo from './assets/image/locoHome.png'
 
 const AppWithRouter = () => (
     <BrowserRouter>

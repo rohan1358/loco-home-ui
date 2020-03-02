@@ -8,7 +8,7 @@ export default class Login extends Component {
       <div>
         <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">
-      <img
+      <image
         alt="loco home"
         src={logo}
         width="45"
@@ -26,7 +26,7 @@ export default class Login extends Component {
       <div className="container" style={{ marginTop: 100, width: 350 }}>
         <Form>
           <div style={{ textAlign: "center", marginBottom: 50 }}>
-            <img style={{ marginBottom: 25 }} src={logo} width="250" />
+            <image style={{ marginBottom: 25 }} src={logo} width="250" />
             <h2>Forgot Password</h2>
           </div>
           <Form.Group controlId="formBasicEmail">

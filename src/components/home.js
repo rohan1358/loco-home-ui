@@ -2,17 +2,18 @@ import React, { Component } from "react";
 import {
   Navbar,
   Nav,
-  NavDropdown,
+  // NavDropdown,
   Form,
   FormControl,
-  Card,
-  Button
+  // Card,
+  // Button,
+  ListGroup
 } from "react-bootstrap";
 import { button } from "react";
 import logo from "../assets/image/locoHome.png";
 import { Link } from "react-router-dom";
 import logout from "../assets/image/logOut.png";
-import localtion from "../assets/image/location.png";
+// import localtion from "../assets/image/location.png";
 import "../assets/css/style.css";
 
 export default class Home extends Component {
@@ -140,13 +141,27 @@ export default class Home extends Component {
             </label>
           </div>
           <div>
-            <>
-              <Card body>
-                <Link to="/detailroom" style={{ textDecoration: "none" }}>
+            {/* <> */}
+            {/* <Card body> */}
+            {/* <Link to="/detailroom" style={{ textDecoration: "none" }}>
                   Nama Rumah
-                </Link>
-              </Card>
-            </>
+                </Link> */}
+
+            {/* </Card>
+            </> */}
+
+            <ListGroup horizontal style={{ marginTop: 10 }}>
+              <ListGroup.Item style={{ fontWeight: "bold", minWidth: 200 }}>
+                <Link to="/detailroom" style={{textDecoration:"none"}}>Nama Rumah</Link>
+              </ListGroup.Item>
+              <ListGroup.Item style={{ fontWeight: "bold", minWidth: 200 }}>
+                Owner
+              </ListGroup.Item>
+              <ListGroup.Item style={{ minWidth: 400 }}>Address</ListGroup.Item>
+              <ListGroup.Item style={{ minWidth: 200 }}>
+                Number Phone
+              </ListGroup.Item>
+            </ListGroup>
           </div>
         </div>
       </div>
